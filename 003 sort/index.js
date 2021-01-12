@@ -84,4 +84,23 @@ function mergeSort(arr) {
     const right = arr.slice(middle);
     return merge(mergeSort(left), mergeSort(right))
 }
-console.log(mergeSort(arr));
+console.log('归并排序', mergeSort(arr));
+
+//快速排序
+function quickSort(arr) {
+    if(arr.length <= 1) {
+        return arr;
+    }
+    const p = arr.length - 1;
+    const left = [];
+    const right = [];
+    for(let i=0; i < p; i++) {
+        if(arr[i] <= p) {
+            left.push(arr[i]);
+        } else {
+            right.push(arr[i]);
+        }
+    }
+    return left.concat(arr[p], right);
+}
+console.log('快速排序--', quickSort(arr));
