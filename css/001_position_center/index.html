@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: bisque;
+            border: 1px solid #999;
+        }
+        .content_1 {
+            background-color: aquamarine;
+            width: 120px;
+            height: 120px;
+        }
+        .content_2 {
+            background-color: aquamarine;
+        }
+        .conainer_flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .conainer_relative {
+            overflow: hidden;
+        }
+        .conainer_relative_content {
+            position: relative;
+            margin: 50%;
+            left: -60px;
+            top: -60px;
+        }
+        .conainer_absolute {
+            position: relative;
+        }
+        .conainer_absolute_content_1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .conainer_absolute_content_2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -60px;
+            margin-top: -60px; 
+        }
+
+        .container_inline {
+            width: 80px;
+            height: 80px;
+            background-color: bisque;
+        }
+        .parent_flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parent_table {
+            display: table;
+            text-align: center;
+        }
+        .child {
+            word-break: break-all;
+        }
+        .child_table {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>块级元素居中</h1>
+    <h3>flex 居中</h3>
+    <div class="container conainer_flex">
+        <div class="content_1">
+            content
+        </div>
+    </div>
+    <h3>relative 居中</h3>
+    <div class="container conainer_relative">
+        <div class="content_1 conainer_relative_content">
+            content
+        </div>
+    </div>
+    <h3>absolute 居中</h3>
+    <div class="container conainer_absolute">
+        <div class="content_1 conainer_absolute_content_1">
+            content
+        </div>
+    </div>
+    <div class="container conainer_absolute">
+        <div class="content_1 conainer_absolute_content_2">
+            content
+        </div>
+    </div>
+
+    <h1>块级元素内容居中</h1>
+    <h3>flex 居中 -- 同块级元素flex居中</h3>
+    <div class="container_inline parent_flex">
+        <span class="child">content_haha_flex_haha</span>
+    </div>
+    <h3>table 居中</h3>
+    <div class="container_inline parent_table">
+        <span class="child child_table">content_haha_table_haha</span>
+    </div>
+</body>
+</html>
