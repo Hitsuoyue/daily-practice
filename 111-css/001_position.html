@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+        #absolute{
+            position: absolute;
+            left: 12px;
+            top: 12px;
+        }
+        #sticky-father{
+            height: 80px;
+            background-color: #ccc;
+            overflow: auto;
+        }
+        #sticky {
+            position: sticky;
+            left: 12px;
+            top: 12px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h3>position: absolute 相对于谁定位</h3>
+    <p>父元素是 relative、fixed、absolute、sticky</p>
+    <div id="father">
+        <div id="absolute">
+            我的定位是 :
+            position: absolute;
+            top: 12px;
+        </div>
+    </div>
+    <h3>position: sticky 特点</h3>
+    <p>在屏幕中可见时，相当于 position: relative；当滚动到超出屏幕区域时，相当于 position: fixed；</p>
+    <p>不脱离文档流，相对于离他最近的有滚动条的祖先元素定位</p>
+    <div id="sticky-father">
+        hahahha <br>
+        hahahhahahah <br>
+        <div id="sticky">
+            我的定位是 :
+            position: sticky;
+            top: 12px;
+        </div>
+        hahahha <br>
+        hahahhahahah <br>
+        hahah <br>
+        hahah <br>
+        hahah <br>
+        hahah <br>
+    </div>
+</body>
+</html>
