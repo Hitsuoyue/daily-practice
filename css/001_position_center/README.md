@@ -121,7 +121,6 @@
             word-break: break-all;
         }
 ```
-### 2. 块级元素内容居中
 
 #### 2.2 table 居中
 ```javascript
