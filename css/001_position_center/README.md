@@ -60,13 +60,21 @@
 #### 1.3 absolute 居中 
 
 ```javascript
+    <h4>已知子元素宽高</h4>
     <div class="container conainer_absolute">
         <div class="content_1 conainer_absolute_content_1">
             content
         </div>
     </div>
+    <h4>未知子元素宽高</h4>
     <div class="container conainer_absolute">
         <div class="content_1 conainer_absolute_content_2">
+            content
+        </div>
+    </div>
+    <h4>未知子元素宽高 - transform</h4>
+    <div class="container conainer_absolute">
+        <div class="content_1 conainer_absolute_content_3">
             content
         </div>
     </div>
@@ -81,10 +89,17 @@
             width: 120px;
             height: 120px;
         }
-         .conainer_absolute {
+        .conainer_absolute {
             position: relative;
         }
         .conainer_absolute_content_1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -60px;
+            margin-top: -60px; 
+        }
+        .conainer_absolute_content_2 {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -92,12 +107,11 @@
             right: 0;
             margin: auto;
         }
-        .conainer_absolute_content_2 {
+        .conainer_absolute_content_3 {
             position: absolute;
-            left: 50%;
             top: 50%;
-            margin-left: -60px;
-            margin-top: -60px; 
+            left: 50%;
+            transform: translate(-50%, -50%); //位移自己宽高的 50%
         }
 ```
 
