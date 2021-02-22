@@ -11,6 +11,6 @@
 
 [005. 进程与线程](https://github.com/Hitsuoyue/daily-practice/tree/master/service/001_%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B)
 
-[005. JS 运行机制（事件循环、宏任务微任务）](https://github.com/Hitsuoyue/daily-practice/tree/master/service/002_JS%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6)
+[006. JS 运行机制（事件循环、宏任务微任务）](https://github.com/Hitsuoyue/daily-practice/tree/master/service/002_JS%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6)
 
 
