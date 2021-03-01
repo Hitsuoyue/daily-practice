@@ -46,7 +46,7 @@
 
 
 https://www.cnblogs.com/qianguyihao/p/4782595.html
-题目：链表反转、有序链表合并
+题目：链表反转(递归)、有序链表合并
 
 **结点**
 ```java
