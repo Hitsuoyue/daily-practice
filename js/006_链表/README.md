@@ -47,6 +47,9 @@
 
 https://www.cnblogs.com/qianguyihao/p/4782595.html
 题目：链表反转(递归)、有序链表合并
+https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/solution/jian-zhi-offer-24-fan-zhuan-lian-biao-die-dai-di-2/
+https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/solution/mian-shi-ti-25-he-bing-liang-ge-pai-xu-de-lian-b-2/
+
 
 **结点**
 ```java
