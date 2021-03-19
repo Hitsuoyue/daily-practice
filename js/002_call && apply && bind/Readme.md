@@ -92,5 +92,13 @@
     }
     let fnTest = test.cusBind(obj);
     fnTest('hahahha');
+
+
+    function foo(str) {
+      "use strict";
+      eval(str);
+      console.log(a);
+    }
+    foo("var a = 2")
 ```
 
